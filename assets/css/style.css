@@ -47,6 +47,13 @@ main{
 
 }
 
+.cell{
+    width: calc(100% / 10);
+    border: 1px solid black;
+    aspect-ratio: 1/1;
+    background-color: white;
+}
+
 
 
 
