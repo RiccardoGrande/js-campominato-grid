@@ -12,16 +12,22 @@ const container = document.querySelector(".container");
 
 const buttonStart = document.querySelector(".button_start");
 
+
 // creo un max numero di celle
 
 let nMax = 100;//Ci saranno quindi 10 caselle per ognuna delle 10 righe.
 
 // creo un ciclo n volte per le celle (dove n in questo caso sta per 100)
 
-for (let i = 0; i < nMax; i++) {
-    const cell = `<div class="cell"></div>`;
-    container.innerHTML += cell;
-  }
+
+buttonStart.addEventListener("click", function(){
+   
+    for (let i = 0; i < nMax; i++) {
+        const cell = `<div class="cell"></div>`;
+        container.innerHTML += cell;
+    }
+  });
+
 
   // seleziono una cella che ha classe cell e active
 
