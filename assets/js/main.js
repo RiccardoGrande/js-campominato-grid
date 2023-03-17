@@ -17,7 +17,12 @@ const buttonStart = document.querySelector(".button_start");
 
 let nMax = 100;//Ci saranno quindi 10 caselle per ognuna delle 10 righe.
 
-// creo un ciclo n volte per le celle (dove n in questo caso sta per 100)
+
+//creo una variabile che mi svuota il container prima di aver premuto il bottone
+container.innerHtml = ``
+
+//successivamente creo un evento che funge da 'click' del bottone che fa apparire la griglia di gioco
+// creo un ciclo n volte per le celle (dove n in questo caso sta per 100) all'interno dell'evento
 
 
 buttonStart.addEventListener("click", function(){
