@@ -56,10 +56,10 @@ buttonStart.addEventListener("click", function(){
 
     const numberEl = document.querySelectorAll(".cell")
 
-    for (let i = 1; i <= 100; i++) {
-        let numberEl = "<li>" + i + "</li>";
+    for (let i = 1; numberEl.length <= 100; i++) {
+        let cellNumber =  numberEl[i]; 
        
-        cellEl.innerHTML = "<ul>" + numberEl + "</ul>";
+        cellEl.innerHTML = cellNumber;
     }
 
     
