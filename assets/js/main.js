@@ -27,8 +27,8 @@ container.innerHtml = ``;
 
 buttonStart.addEventListener("click", function(){
    
-    for (let i = 0; i < nMax; i++) {
-        const cell = `<div class="cell"></div>`;
+    for (let i = 1; i <= nMax; i++) {
+        const cell = `<div class="cell">${i}</div>`;
         container.innerHTML += cell;
     }
 
@@ -44,25 +44,17 @@ buttonStart.addEventListener("click", function(){
 
     
 
-    for (let i = 0; i < cellEl.length; i++) {
-        const thisCell = cellEl[i];
+    for (let j = 0; j < cellEl.length; j++) {
+        const thisCell = cellEl[j];
         console.log(thisCell)
         thisCell.addEventListener("click", function() {
             thisCell.classList.toggle("bg_lightblue")
             // this.classList.add("active")
-            console.log("You clicked number ${}")
+            console.log("You clicked number `i`")
         })
     };
 
-    const numberEl = document.querySelectorAll(".cell")
-
-    for (let i = 1; numberEl.length <= 100; i++) {
-        let cellNumber =  numberEl[i]; 
-       
-        
-    }
-
-    cellEl.innerHTML = cellNumber;
+   
 
     
 });
