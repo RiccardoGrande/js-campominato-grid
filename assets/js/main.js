@@ -59,8 +59,10 @@ buttonStart.addEventListener("click", function(){
     for (let i = 1; numberEl.length <= 100; i++) {
         let cellNumber =  numberEl[i]; 
        
-        cellEl.innerHTML = cellNumber;
+        
     }
+
+    cellEl.innerHTML = cellNumber;
 
     
 });
