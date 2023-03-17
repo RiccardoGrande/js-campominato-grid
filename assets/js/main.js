@@ -26,25 +26,25 @@ buttonStart.addEventListener("click", function(){
         const cell = `<div class="cell"></div>`;
         container.innerHTML += cell;
     }
-  });
 
-
+    
   // seleziono una cella che ha classe cell e active
 
-const cellEl = document.querySelectorAll(".cell")
+    const cellEl = document.querySelectorAll(".cell")
 
-// aggiungo eventlisner per la classe active ciclando per la lunghezza dell'array cellEl
+    // aggiungo eventlisner per la classe active ciclando per la lunghezza dell'array cellEl
 
 
-for (let i = 0; i < cellEl.length; i++) {
-    const thisCell = cellEl[i];
-    console.log(thisCell)
-    thisCell.addEventListener("click", function() {
-        thisCell.classList.toggle("bg_lightblue")
-        // this.classList.add("active")
-        console.log("You clicked number ${}")
-    })
+    for (let i = 0; i < cellEl.length; i++) {
+        const thisCell = cellEl[i];
+        console.log(thisCell)
+        thisCell.addEventListener("click", function() {
+            thisCell.classList.toggle("bg_lightblue")
+            // this.classList.add("active")
+            console.log("You clicked number ${}")
+        })
+    };
 
 
     
-}
+});
