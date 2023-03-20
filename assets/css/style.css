@@ -55,6 +55,9 @@ main{
     border: 1px solid black;
     aspect-ratio: 1/1;
     background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .bg_lightblue{
