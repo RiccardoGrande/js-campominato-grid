@@ -50,7 +50,7 @@ buttonStart.addEventListener("click", function(){
         thisCell.addEventListener("click", function() {
             thisCell.classList.toggle("bg_lightblue")
             // this.classList.add("active")
-            console.log("You clicked number `i`")
+            console.log(`You clicked number ${j + 1}`)
         })
     };
 
